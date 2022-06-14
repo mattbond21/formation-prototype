@@ -1,0 +1,14 @@
+# Permalinks
+permalink: pretty
+
+# Compile CSS
+sass:
+  style: compressed
+sass:
+  sass_dir: _sass
+
+# Setup
+title:            Quizlet app rethink
+tagline:          'Formation Prototype'
+url:              http://mattbond21.github.io/qz-formation-prototype/
+baseurl:          /qz-formation-prototype/

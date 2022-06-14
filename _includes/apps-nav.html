@@ -1,0 +1,24 @@
+<div class="page-header">
+  <div class="header-left">
+    <nav class="tabs">
+      <a href="#" class="tab-item {% if page.tab == 'All' %}active{% endif %}">All</a>
+      <a href="#" class="tab-item {% if page.tab == 'Recents' %}active{% endif %}">Recents</a>
+      <a href="#" class="tab-item {% if page.tab == 'Starred' %}active{% endif %}">Starred</a>
+      <a href="#" class="tab-item {% if page.tab == 'Modules' %}active{% endif %}">Modules</a>
+      <a href="#" class="tab-item {% if page.tab == 'Trash' %}active{% endif %}">Trash</a>
+    </nav>  
+  </div>
+  <div class="header-right">
+    <div class="dropdown">
+      <a class="dropdown-toggle" id="appsSortMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <button class="button button-small button-subtle">Alphabetical<span class="dropdown-icon-secondary"></span></button>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="appsSortMenu">
+        <li class="dropdown-header">Sort</li>
+        <li><a href="#">Alphabetical</a></li>
+        <li><a href="#">Modified</a></li>
+        <li><a href="#">Created</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

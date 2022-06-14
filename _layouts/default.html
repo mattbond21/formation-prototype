@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+<body>
+
+    <app>
+        <div id="header">
+          <div class="nav-logo">
+            <a href="{{ site.baseurl }}" class="logo">
+              <svg width="94" height="20" viewBox="0 0 94 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.83258C0 1.8205 0.843943 1 1.88494 1H9.11506C10.1561 1 11 1.8205 11 2.83258V4.08375C11 4.58975 10.578 5 10.0576 5H0.942429C0.421972 5 0 4.58975 0 4.08375V2.83258ZM3.8147e-06 7.91625C3.8147e-06 7.41025 0.421976 7 0.942433 7H18.1151C19.1561 7 20 7.8205 20 8.83258L20 13.0837C20 13.5897 19.578 14 19.0576 14H1.88494C0.843943 14 0 13.1795 0 12.1674L3.8147e-06 7.91625ZM9.94243 16C9.42197 16 9 16.4102 9 16.9162V17.5007C9 18.5128 9.84394 19 10.8849 19H18.1151C19.1561 19 20 18.5128 20 17.5007V16.9162C20 16.4102 19.578 16 19.0576 16H9.94243Z" fill="#1F2128"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6663 12.1619H31.7701V17.7585H28V2H34.8402C38.6554 2 41.0257 3.77779 41.0257 7.06994C41.0257 9.4184 39.7615 11.0425 37.5944 11.7668L41.4998 17.7585H37.188L33.6663 12.1619ZM31.7701 5.09467V9.17697H34.6371C36.4204 9.17697 37.3234 8.40875 37.3234 7.13582C37.3234 5.84088 36.4204 5.09467 34.6371 5.09467H31.7701ZM53.4046 14.62C52.5242 16.8368 50.3569 18 47.9866 18C44.3972 18 41.959 15.5638 41.959 11.9644C41.959 8.54046 44.4875 5.95065 47.9189 5.95065C51.5309 5.95065 53.4949 8.54046 53.4949 11.8107V12.7325H45.4357C45.684 14.3128 46.6546 15.2126 48.0318 15.2126C49.1605 15.2126 50.0409 14.6859 50.3796 13.6763L53.4046 14.62ZM49.928 10.5816C49.9055 9.5501 49.2056 8.67222 47.8737 8.67222C46.7675 8.67222 45.9097 9.30868 45.5485 10.5816H49.928ZM55.5422 14.6639C55.5422 17.0343 56.8289 17.8683 59.4025 17.8683C60.2603 17.8683 60.9375 17.8025 61.5696 17.7147V14.8395C61.1633 14.8834 60.9601 14.9053 60.5312 14.9053C59.6282 14.9053 59.109 14.7298 59.109 13.7641V9.08919H61.4342V6.19208H59.109V2.98767H55.5422V6.19208H54.0296V9.08919H55.5422V14.6639ZM68.5316 5.95065C72.0305 5.95065 74.4916 8.38684 74.4916 11.9863C74.4916 15.5857 72.0305 18 68.5316 18C65.0101 18 62.572 15.5857 62.572 11.9863C62.572 8.38684 65.0101 5.95065 68.5316 5.95065ZM68.5316 8.82583C67.0869 8.82583 66.1614 9.96708 66.1614 11.9863C66.1614 14.0055 67.0869 15.1468 68.5316 15.1468C69.9763 15.1468 70.9025 14.0055 70.9025 11.9863C70.9025 9.96708 69.9763 8.82583 68.5316 8.82583ZM87.4984 11.9863C87.4984 8.38684 85.0382 5.95065 81.5385 5.95065C78.0175 5.95065 75.5794 8.38684 75.5794 11.9863C75.5794 15.5857 78.0175 18 81.5385 18C85.0382 18 87.4984 15.5857 87.4984 11.9863ZM79.1685 11.9863C79.1685 9.96708 80.0938 8.82583 81.5385 8.82583C82.984 8.82583 83.9093 9.96708 83.9093 11.9863C83.9093 14.0055 82.984 15.1468 81.5385 15.1468C80.0938 15.1468 79.1685 14.0055 79.1685 11.9863ZM89.1966 2H92.8086V17.7585H89.1966V2Z" fill="#1F2128"/>
+              </svg>  
+            </a>
+          </div> <!-- .nav-logo -->
+
+          <div class="nav-bar">
+            <a href="{{ site.baseurl }}" class="nav-node {% if page.title == 'Home' %}nav-active{% endif %}">Home</a>
+            <a href="{{ site.baseurl }}apps" class="nav-node {% if page.title == 'Apps' %}nav-active{% endif %}">Apps</a>
+            <a href="{{ site.baseurl }}resources" class="nav-node {% if page.title == 'Resources' %}nav-active{% endif %}">Resources</a>
+            <a href="{{ site.baseurl }}query-library" class="nav-node {% if page.title == 'Query Library' %}nav-active{% endif %}">Query Library</a>
+            <!-- <a href="{{ site.baseurl }}workflows" class="nav-node {% if page.title == 'Workflows' %}nav-active{% endif %}">Workflows</a> -->
+          </div> <!-- .nav-bar -->
+
+          <div class="nav-right">
+            <form class="search-form" action="index.html" method="post">
+              <input class="form-control" type="text" placeholder="Search">
+            </form>
+            <a class="button button-upgrade" data-toggle="modal" data-target="#createModal">Upgrade</a>
+
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="createMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <button class="button button-primary create-button">Create<span class="dropdown-icon-primary"></span></button>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="createMenu">
+                <li class="dropdown-header">Apps</li>
+                <li><a href="#">New App</a></li>
+                <li><a href="#">New Mobile App</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Resources</li>
+                <li><a href="#">New Resource</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Workflows</li>
+                <li><a href="#">New Workflow</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+                <a class="dropdown-toggle profile-container" id="profileMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <div class="profile-avatar"></div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="profileMenu">
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Invite users</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Legacy features</li>
+                  <li><a href="#">Audit logs</a></li>
+                  <li><a href="#">Data editor</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+          </div> <!-- .nav-right -->
+        </div> <!-- #header -->
+
+      <div id="main">
+        <div class="main-container">
+          {{ content }}
+        </div>
+      </div>
+    </app>
+
+    {% include modals.html %}
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="{{ site.baseurl }}js/jquery.js"></script>
+    <script src="{{ site.baseurl }}js/main.js"></script>
+    <script src="{{ site.baseurl }}js/bootstrap.js"></script>
+    <!-- iScroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+</body>
+
+</html>

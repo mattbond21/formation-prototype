@@ -1,0 +1,73 @@
+
+
+
+.dropdown-menu {
+  padding: 4px 0;
+  font-size: 13px;
+  visibility: hidden;
+  background: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.08);
+  border: 1px solid var(--gray-200);
+}
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 4px 0;
+  overflow: hidden;
+  background-color: var(--gray-200);
+}
+.dropdown-menu > li > a {
+  padding: 4px 12px;
+  clear: both;
+  line-height: 20px;
+  color: var(--gray-900);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: var(--gray-900);
+  background-color: var(--gray-050);
+}
+
+.dropup .dropdown-menu {
+  margin-bottom: 4px;
+  right: 0;
+}
+
+.open > .dropdown-menu {
+  visibility: visible;
+}
+
+.dropdown-header {
+  line-height: 20px;
+  padding: 3px 12px;
+  font-weight: 500;
+}
+
+.search-form > .form-control {
+  border-color: transparent;
+  background: var(--gray-050) url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.2426 10.7934C12.8849 9.86742 13.2614 8.74302 13.2614 7.53069C13.2614 4.36571 10.6957 1.79999 7.53069 1.79999C4.36571 1.79999 1.79999 4.36571 1.79999 7.53069C1.79999 10.6957 4.36571 13.2614 7.53069 13.2614C8.80948 13.2614 9.99044 12.8425 10.9439 12.1345L13.4906 14.6813C13.8551 15.0457 14.446 15.0457 14.8105 14.6813C15.175 14.3168 15.175 13.7258 14.8105 13.3613L12.2426 10.7934ZM11.3947 7.53069C11.3947 9.66474 9.66474 11.3947 7.53069 11.3947C5.39664 11.3947 3.66665 9.66474 3.66665 7.53069C3.66665 5.39664 5.39664 3.66665 7.53069 3.66665C9.66474 3.66665 11.3947 5.39664 11.3947 7.53069Z' fill='%23B3B3B3'/%3E%3C/svg%3E%0A") no-repeat 12px;
+  box-shadow: none;
+  padding-left: 40px;
+}
+
+.form-control {
+  font-weight: 500;
+  color: var(--gray-900);
+  border-radius: 6px;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  outline-offset: unset;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: unset;
+}
