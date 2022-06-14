@@ -8,7 +8,7 @@ sass:
   sass_dir: _sass
 
 # Setup
-title:            Quizlet app rethink
-tagline:          'Formation Prototype'
-url:              http://mattbond21.github.io/qz-formation-prototype/
-baseurl:          /qz-formation-prototype/
+title:            Retool app redesign
+tagline:          'Retool UI Prototype'
+url:              http://tryretool.github.io/mb-design-prototype/
+baseurl:          /mb-design-prototype/
