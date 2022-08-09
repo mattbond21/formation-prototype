@@ -55,12 +55,45 @@
   background: var(--gray-050) url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.2426 10.7934C12.8849 9.86742 13.2614 8.74302 13.2614 7.53069C13.2614 4.36571 10.6957 1.79999 7.53069 1.79999C4.36571 1.79999 1.79999 4.36571 1.79999 7.53069C1.79999 10.6957 4.36571 13.2614 7.53069 13.2614C8.80948 13.2614 9.99044 12.8425 10.9439 12.1345L13.4906 14.6813C13.8551 15.0457 14.446 15.0457 14.8105 14.6813C15.175 14.3168 15.175 13.7258 14.8105 13.3613L12.2426 10.7934ZM11.3947 7.53069C11.3947 9.66474 9.66474 11.3947 7.53069 11.3947C5.39664 11.3947 3.66665 9.66474 3.66665 7.53069C3.66665 5.39664 5.39664 3.66665 7.53069 3.66665C9.66474 3.66665 11.3947 5.39664 11.3947 7.53069Z' fill='%23B3B3B3'/%3E%3C/svg%3E%0A") no-repeat 12px;
   box-shadow: none;
   padding-left: 40px;
+  margin-bottom: 0;
 }
 
 .form-control {
   font-weight: 500;
   color: var(--gray-900);
   border-radius: 6px;
+  border: 1px solid var(--gray-200);
+  background: var(--gray-025);
+  box-shadow: none;
+  margin-bottom: 16px;
+
+  &:hover {
+    border: 1px solid var(--gray-300);
+    box-shadow: none;
+  }
+
+  &:focus {
+    border: 1px solid var(--blue-500);
+    background: var(--white);
+    box-shadow: none;
+
+    &:hover {
+      border: 1px solid var(--blue-500);
+      box-shadow: none;
+    }
+  }
+}
+
+.form-control:last-child {
+  margin-bottom: 0;
+}
+
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin-bottom: 4px;
 }
 
 input[type="checkbox"]:focus {
@@ -70,4 +103,30 @@ input[type="checkbox"]:focus {
 
 input[type="radio"], input[type="checkbox"] {
   margin: unset;
+}
+
+.modal-backdrop {
+  background: var(--gray-900);
+}
+
+.modal-dialog {
+  width: 560px;
+  margin: 128px auto;
+}
+
+.modal-header {
+  padding: 24px 24px 0 24px;
+}
+
+.modal-body {
+  padding: 24px 24px 0 24px;
+}
+
+.modal-footer {
+  padding: 8px 24px 24px 24px;
+  border-top: none;
+}
+
+.modal-footer > button + button {
+  margin-left: 8px;
 }

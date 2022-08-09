@@ -367,7 +367,7 @@ app {
 
 .nav-node.nav-active {
   background-color: var(--blue-050);
-  color: var(--blue-600);
+  color: var(--blue-700);
 
   &:hover {
     text-decoration: none;
@@ -419,12 +419,12 @@ app {
 }
 
 .tabs > .active {
-  color: var(--blue-600);
+  color: var(--blue-700);
   background: var(--blue-050);
 }
 
 .tabs > .active.tab-item:hover {
-  color: var(--blue-600);
+  color: var(--blue-700);
   background-color: var(--blue-050);
 }
 
@@ -614,10 +614,10 @@ app {
   place-items: center;
   color: var(--gray-700);
   border: 1px solid;
-  border-color: var(--gray-300);
+  border-color: var(--gray-200);
 
   &:hover {
-    border-color: var(--gray-400);
+    border-color: var(--gray-300);
     color: var(--gray-900);
   }
 }
@@ -642,7 +642,7 @@ app {
 .app-row-title > h5 {
   font-weight: 600;
   margin-bottom: 0;
-  color: var(--gray-900);
+  color: var(--gray-700);
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -712,7 +712,7 @@ app {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid var(--gray-400);
+  border: 1px solid var(--gray-300);
   border-radius: 4px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -740,7 +740,7 @@ button.button {
   font-weight: 600;
   background: var(--white);
   border: 1px solid;
-  border-color: var(--gray-300);
+  border-color: var(--gray-200);
   border-radius: 6px;
   padding: 0px 12px;
   cursor: pointer;
@@ -750,8 +750,8 @@ button.button {
 
   &:hover {
     background-color: var(--white);
-    border-color: var(--gray-400);
-    color: var(--gray-800);
+    border-color: var(--gray-300);
+    color: var(--gray-900);
   }
 }
 
@@ -770,8 +770,8 @@ button.button-primary {
   color: var(--white);
 
   &:hover {
-    background-color: var(--blue-600);
-    border-color: var(--blue-600);
+    background-color: var(--blue-700);
+    border-color: var(--blue-700);
     color: var(--white);
   }
 }
@@ -779,7 +779,7 @@ button.button-primary {
 a.button-subtle,
 button.button-subtle {
   border-color: transparent;
-  color: var(--gray-600);
+  color: var(--gray-700);
 
   &:hover {
     border-color: transparent;
