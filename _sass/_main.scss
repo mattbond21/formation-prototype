@@ -444,7 +444,8 @@ app {
 
 .card {
   flex: 1;
-  background-color: #7A88F530;
+  background-color: var(--white);
+  border: 1px solid var(--gray-100);
   border-radius: 12px;
   color: var(--gray-900);
   height: 180px;
@@ -545,22 +546,6 @@ app {
 
 .card-buttons > .button {
   margin-right: 8px;
-}
-
-.button.button-cards {
-  background: transparent;
-  border: 1px solid transparent;
-  color: rgba(0,0,0,0.6);
-
-  &:hover {
-    background: rgba(0,0,0,0.05);
-    border: 1px solid transparent;
-    color: rgba(0,0,0,0.8);
-  }  
-}
-
-.button-primary.button-cards {
-  opacity: 0.9;
 }
 
 .button-primary.button-cards:hover {
